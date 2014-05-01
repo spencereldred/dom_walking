@@ -1,0 +1,43 @@
+h1 {
+  color: green;
+  text-align: center;
+}
+
+img {
+  position: absolute;
+  left: 200px;
+  width: 200px;
+  margin-top: 200px;
+}
+
+.flip-img {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+/* Container */
+.container {
+  position: relative;
+}
+
+.container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: transparent url('city_2.jpg') no-repeat;
+    margin-left: 400px;
+    height: 900px;
+   opacity: 0.8;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+}​
